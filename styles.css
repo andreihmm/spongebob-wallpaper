@@ -1,0 +1,66 @@
+/* Estilo geral */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('assets/conchStreet2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo do vídeo */
+.background-video video {
+    position: fixed;
+    /* Usar fixed para que o vídeo cubra toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 1;
+    /* Colocar o vídeo atrás de outros elementos */
+}
+
+/* Estilo da imagem */
+.image {
+    position: absolute;
+    /* Se necessário, ajuste a posição */
+    top: 0;
+    /* Ou ajuste conforme necessário */
+    left: 0;
+    /* Ou ajuste conforme necessário */
+    width: 100%;
+    /* Ou ajuste conforme necessário */
+    height: 100%;
+    /* Ou ajuste conforme necessário */
+    object-fit: cover;
+    /* Ajuste da imagem */
+}
+
+/* Estilo das imagens ao passar o mouse */
+.hover-image {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Transição suave de 0.3 segundos */
+}
+
+.bubble-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    /* Inicialmente invisível */
+    pointer-events: none;
+    /* Não interfere na interação com outros elementos */
+    z-index: 2;
+    /* Colocado acima de outros conteúdos */
+    transition: opacity 2s ease-in-out;
+    /* Transição suave para aparecer/desaparecer */
+}

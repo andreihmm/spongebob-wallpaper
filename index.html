@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Filtro MP4 debaixo d'água -->
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="assets/aguaw.webm" type="video/webm">
+        </video>
+    </div>
+
+
+    <!-- Conteúdo principal com imagens que mudam de acordo com a posição do mouse -->
+    <div class="content">
+        <img src="assets/rocha.png" class="image hover-image left" id="left-image" alt="Imagem Esquerda">
+        <img src="assets/moai.png" class="image hover-image center" id="center-image" alt="Imagem Centro">
+        <img src="assets/abacaxi.png" class="image hover-image right" id="right-image" alt="Imagem Direita">
+    </div>
+
+    <img id="bubble-gif" class="bubble-video" src="assets/bubblegifslow.gif" alt="Bubbles Animation">
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
